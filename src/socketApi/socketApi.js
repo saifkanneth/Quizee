@@ -5,7 +5,7 @@ export class SocketAPI {
         this.connectionObj = null;
 
 
-        this.socketUrl = "ws://3.229.239.234:2567";
+        this.socketUrl = "ws://3.229.239.234:2567"
         this.endPoints = {
             "start": "/start",
             "exit": "/exit",
@@ -22,23 +22,12 @@ export class SocketAPI {
     open() {
         console.log("Opening")
         this.connectionObj = new Colyseus.Client(this.socketUrl);
-        console.log(this.connectionObj, " connection Obj")
-        this.connectionObj.getAvailableRooms().then(rooms => {
-            console.log("joined successfully", rooms);
-        }).catch(e => {
-            console.error("join error", e);
+        console.log(this.connectionObj.send, " connection Obj")
+        this.connectionObj.getAvailableRooms().then(room => {
+            console.log("Joined")
+        }, err => {
+            console.log(err)
         });
-
-        /* 
-        "", {
-            "user_id": "dwefsid87r32rhiwenj",
-            "Room_id": "ifnsdkf8h4rforou3h",
-            "quiz_type": "single",
-            "no_of_question_per_quiz": 10,
-            "questions_type": "text",
-            "numbber_of_player": 2
-        }
-        */
     }
     onOpen() {
         console.log("Connection Successfull!");
