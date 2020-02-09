@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" content="width=device-width,minimum-scale=1,maximum-scale=1" name="viewport">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+   
+    <style>
+        @font-face{
+            font-family: "BRLNSB";
+            src:url("fonts/BRLNSDB.TTF")
+        }
+        @font-face{
+            font-family: "ESTRE";
+            src:url("fonts/estre.ttf")
+        }
+        
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            min-height: 100vh;
+            overflow:hidden;
+            margin: 0px;
+        }
+
+        #game-sec {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        canvas{
+            background-color:#f7f7f7;
+        }
+        .dummy{
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+        .dummy p:nth-child(1){
+            font-family: 'BRLNSB';
+        }
+        .dummy p:nth-child(2){
+            font-family: "ESTRE";
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="dummy">
+        <p>Demo 1</p>
+        <p>Demo 2</p>
+    </div>
+    <div id="game-sec">
+        
+    
+        
+    
+       
+    </div>
+  
+    
+    <script src="phaser.2.11.0.min.js"></script>
+
+<script type="text/javascript" src="main.js"></script></body>
+
+</html>
