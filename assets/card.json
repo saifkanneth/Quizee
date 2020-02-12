@@ -1,0 +1,27 @@
+﻿{"frames": {
+
+"back":
+{
+	"frame": {"x":20,"y":20,"w":166,"h":170},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":166,"h":170},
+	"sourceSize": {"w":166,"h":170}
+},
+"front":
+{
+	"frame": {"x":20,"y":210,"w":166,"h":170},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":166,"h":170},
+	"sourceSize": {"w":166,"h":170}
+}},
+"meta": {
+	"app": "Adobe Flash Professional",
+	"version": "15.0.1.179",
+	"image": "card.png",
+	"format": "RGBA8888",
+	"size": {"w":230,"h":400},
+	"scale": "1"
+}
+}

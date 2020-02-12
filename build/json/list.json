@@ -8,18 +8,20 @@
             "Lawyers"
         ],
         "score":100,
+        "que_type":"single",
         "answer": ["Photographers"]
     },
     "1": {
         "question": "This film launched Amitabh Bachchan as the 'angry young man' of Bollywood.",
         "options": [
-            "Sholay",
+            "Zanjeer",
             "Deewar",
             "Zanjeer",
             "Saat Hindustani"
         ],
         "score":150,
-        "answer": ["Zanjeer"]
+        "que_type":"multi",
+        "answer": ["Zanjeer","Zanjeer"]
     },
     "2": {
         "question": "Preity Zinta made her debut in this film.",
@@ -30,6 +32,7 @@
             "Kya Kehna"
         ],
         "score":200,
+        "que_type":"single",
         "answer": ["Dil Se"]
     },
     "3": {
@@ -38,10 +41,11 @@
             "Sanjay Leela Bhansali",
             "Prakash Jha",
             "Ashutosh Gowariker",
-            "Karan Johar"
+            "Sanjay Leela Bhansali"
         ],
         "score":250,
-        "answer": ["Sanjay Leela Bhansali"]
+        "que_type":"multi",
+        "answer": ["Sanjay Leela Bhansali","Sanjay Leela Bhansali"]
     },
     "4": {
         "question": "Name Aamir Khan’s character in the Oscar-nominated film 'Lagaan.'",
@@ -52,6 +56,7 @@
             "Lallan"
         ],
         "score":300,
+        "que_type":"single",
         "answer": ["Bhuvan"]
     }
 }

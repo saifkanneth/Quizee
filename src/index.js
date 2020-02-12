@@ -3,7 +3,6 @@ import { ResponsiveGame } from './util/responsive-util';
 import { Global } from './util/global';
 import { Loader } from './states/Loader';
 import { Game } from './states/Game';
-import { SocketAPI } from './socketApi/socketApi';
 
 
 export default class Boot {
@@ -11,10 +10,7 @@ export default class Boot {
 
     }
     init() {
-        setTimeout(function () {
-            Global.connectionEP = new SocketAPI();
-            Global.connectionEP.open();
-        }, 2000)
+       
         Global.responsiveObj = new ResponsiveGame();
         Global.defaultDimension = Global.responsiveObj.init({
             orientation: "portrait",
@@ -33,8 +29,7 @@ export default class Boot {
 
         this.game.state.add("Loader", Loader);
         this.game.state.add("Game", Game);
-        this.game.load.image('loaderBG', 'assets/loaderBG.jpg');
-        this.game.load.image('loaderDots', 'assets/loaderDots.png')
+      
     }
     create() {
         Global.responsiveObj.notify("subscribe", {

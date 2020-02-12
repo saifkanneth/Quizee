@@ -13,6 +13,22 @@ function checkMatch(arr1, arr2) {
 
 };
 
+function shuffle(array) {
+	//loop through several times
+	for (var i = 0; i < 10; i++) {
+		//pick two random places
+		var place1 = Math.floor(Math.random() * array.length);
+		var place2 = Math.floor(Math.random() * array.length);
+		//make a temp variable to hold place1's value
+		var temp = array[place1];
+		//now move the value of place2 into place1's slot
+		array[place1] = array[place2];
+		//take the temp value and place it in place2's slot
+		array[place2] = temp;
+	}
+	return array;
+}
 export {
-    checkMatch
+	checkMatch,
+	shuffle
 }

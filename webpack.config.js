@@ -29,7 +29,7 @@ module.exports = {
     },
     devtool: 'eval-source-map',
     devServer: {
-        host: '192.168.1.132',
+        host: '192.168.1.155',
         port:'8080',
         contentBase: './build'
     },
